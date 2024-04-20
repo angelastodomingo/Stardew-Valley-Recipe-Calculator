@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calcscreen"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/egg"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683"
+        app:srcCompat="@drawable/egg" />
+
+    <ImageView
+        android:id="@+id/alert"
+        android:layout_width="48dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toTopOf="@+id/egg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="@drawable/exclamationmark" />
+
+    <ImageView
+        android:id="@+id/duckegg"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679"
+        app:srcCompat="@drawable/duck_egg" />
+
+    <ImageView
+        android:id="@+id/voidegg"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toEndOf="@+id/egg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        app:srcCompat="@drawable/void_egg" />
+
+    <ImageView
+        android:id="@+id/mayomachine"
+        android:layout_width="49dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/egg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert"
+        app:layout_constraintVertical_bias="0.868"
+        app:srcCompat="@drawable/mayonnaise_machine" />
+
+    <ImageView
+        android:id="@+id/dinoegg"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toEndOf="@+id/voidegg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        app:srcCompat="@drawable/dino_egg" />
+
+    <ImageView
+        android:id="@+id/resetbtn"
+        android:layout_width="121dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/egg"
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@drawable/reset" />
+
+    <ImageView
+        android:id="@+id/calculatebtn"
+        android:layout_width="166dp"
+        android:layout_height="91dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toEndOf="@+id/egg"
+        app:layout_constraintTop_toBottomOf="@+id/dinoegg"
+        app:layout_constraintVertical_bias="0.219"
+        app:srcCompat="@drawable/calculate" />
+
+    <ImageView
+        android:id="@+id/mayonnise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/voidegg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655"
+        app:srcCompat="@drawable/mayonnise"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/slot2egg"
+        android:layout_width="45dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/dinoegg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toEndOf="@+id/alert"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/egg"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/slot1machine"
+        android:layout_width="29dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/duckegg"
+        app:layout_constraintEnd_toStartOf="@+id/slot2egg"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mayonnaise_machine"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/slot2duckegg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/mayonnise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949"
+        app:srcCompat="@drawable/duck_egg"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/duckmayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/voidegg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651"
+        app:srcCompat="@drawable/duck_mayo"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/slot2voidegg"
+        android:layout_width="46dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/mayonnise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951"
+        app:srcCompat="@drawable/void_egg"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/voidmayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/voidegg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648"
+        app:srcCompat="@drawable/void_mayo"
+        tools:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/slot2dinoegg"
+        android:layout_width="26dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/calculatebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/dino_egg"
+        tools:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/dinomayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/voidegg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649"
+        app:srcCompat="@drawable/dino_mayo"
+        tools:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
